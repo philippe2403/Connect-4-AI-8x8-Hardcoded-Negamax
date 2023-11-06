@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 #include <cstdlib>
 #include <string>
@@ -29,10 +27,10 @@ int main() {
             int aiMove = ai.AIManager(board);  // Store the AI's move
             board.input[aiMove] = 'O';
             cout << "\n\n\n\n\nAI has picked column " << (aiMove % 8 == 0 ? 8 : aiMove % 8) << endl;
-            choice = 1; // After the AI has played, it's now the player's turn
+            choice = 1; 
         } else {
             board.PlayPosition('X');
-            choice = 2; // After the player has played, it's now the AI's turn
+            choice = 2; 
         }
 
         board.DrawBoard();
