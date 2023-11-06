@@ -12,4 +12,4 @@ public:
     void PlayPosition(char);
 };
 
-#endif // BOARD_H
+#endif 
