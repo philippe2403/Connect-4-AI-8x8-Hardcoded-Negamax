@@ -85,7 +85,8 @@ using namespace std;
         }
 
         // Recurse to a maximum depth of 6
-        if (Depth <= 6) {
+        // Set lower if u want it to run faster but less smart, higher than 6 might waste ur time
+        if (Depth <= 6) { 
             for (int column = 1; column <= 8; column++) {
                 int temp = 0; 
                 if (PlayNumber[column] != 0) {
