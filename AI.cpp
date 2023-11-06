@@ -87,7 +87,7 @@ using namespace std;
         // Recurse to a maximum depth of 6
         if (Depth <= 6) {
             for (int column = 1; column <= 8; column++) {
-                int temp = 0; // Temporary variable to store the current chance
+                int temp = 0; 
                 if (PlayNumber[column] != 0) {
                     board.input[PlayNumber[column]] = XO;
 
