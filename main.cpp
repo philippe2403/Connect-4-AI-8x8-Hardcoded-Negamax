@@ -9,11 +9,6 @@
 
 using namespace std;
 
-//Philippe Nguyen
-//Jacob Koodarappally
-//James Schultz
-//Nyan Myint Thu
-
 int main() {
     srand(time(0));
     Board board;
