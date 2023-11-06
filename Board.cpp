@@ -103,7 +103,7 @@ void Board::PlayPosition(char XO) {
 
             if (sth == -1) {
                 cout << "Thanks for playing!" << endl;
-                exit(0);  // Exits the program
+                exit(0);  
             }
 
             sth = GetValue(sth);
@@ -111,7 +111,7 @@ void Board::PlayPosition(char XO) {
             if (sth != 0) {
                 input[sth] = XO;
                 int columnChosen = sth % 8 == 0 ? 8 : sth % 8;  // Calculate the actual column number
-                cout << "\n\n\n\n\nPlayer has picked column " << columnChosen << endl;  // Display the Player's move
+                cout << "\n\n\n\n\nPlayer has picked column " << columnChosen << endl;  
                 return;
             } else {
                 cout << "ERROR: Invalid position. Try again or enter -1 to stop." << endl;
